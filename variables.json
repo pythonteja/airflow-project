@@ -1,0 +1,7 @@
+{
+    "CH_DATABASE": "default",
+    "CH_HOST": "host.docker.internal",
+    "CH_PASSWORD": "teja.415",
+    "CH_PORT": 9000,
+    "CH_USER": "airflow"
+}
