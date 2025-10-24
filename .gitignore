@@ -1,0 +1,80 @@
+# ---------------------------------------
+# Python
+# ---------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+*.log
+*.swp
+*.swo
+
+# ---------------------------------------
+# Airflow Specific
+# ---------------------------------------
+# Airflow log files
+logs/
+*/logs/
+
+# Airflow SQLite database (if using default DB)
+airflow.db
+airflow.db-journal
+
+# Airflow configuration files
+airflow.cfg
+webserver_config.py
+
+# DAG serialization / compiled files
+*.pickle
+*.zip
+
+# Airflow temporary data (when using LocalExecutor)
+*.pid
+airflow-webserver.pid
+
+# Airflow test DAGs
+dags/example_dags/
+dags/__pycache__/
+
+# ---------------------------------------
+# Environment & Credentials
+# ---------------------------------------
+.env
+.env.*
+*.keytab
+*.pem
+*.crt
+*.key
+*.json
+# *.yml
+# *.yaml
+
+# ---------------------------------------
+# Docker
+# ---------------------------------------
+.dockerignore
+docker-compose.override.yml
+*.bak
+*.tmp
+
+# Airflow Docker mount volumes
+volumes/
+plugins/__pycache__/
+plugins/.mypy_cache/
+dags/.ipynb_checkpoints/
+
+# ---------------------------------------
+# IDE / Editor files
+# ---------------------------------------
+.vscode/
+.idea/
+*.iml
+*.code-workspace
+
+# ---------------------------------------
+# System Files
+# ---------------------------------------
+.DS_Store
+Thumbs.db
